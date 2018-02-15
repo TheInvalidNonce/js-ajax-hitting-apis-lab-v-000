@@ -13,7 +13,7 @@ function getRepositories() {
 
 function showRepositories() {
   let repos = JSON.parse(this.responseText)
-  console.log(repos);
+  // console.log(repos);
   
   
 const repoList = `<ul>${r.map(r =>'<li>' + rname + ' - https://github.com/' + r.full_name + ' <a href="#" data-repo="' + r.name + '" data-username="' + r["owner"]["login"]   + '" onclick="getCommits(this)">Get Commits</a>' + ' <a href="#" data-repo="' + r.name + '" data-username="' + r["owner"]["login"] + '" onclick="getBranches(this)">Get Branches</a>' + '</li>').join('')}</ul>`
