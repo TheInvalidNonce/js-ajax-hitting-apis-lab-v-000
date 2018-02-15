@@ -30,3 +30,8 @@ function getCommits(el) {
   req.open("GET", url)
   req.send()
 }
+
+function displayCommits() {
+  const commits = JSON.parse(this.responseText)
+  const commitsList = `<ul>${commits.map(c => '<li>' + c.commit.author.name + ' (' + c.author.login + ')' + c.commit.message + '</li>')}</ul>`
+}
