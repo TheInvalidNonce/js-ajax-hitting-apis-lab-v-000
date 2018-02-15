@@ -6,7 +6,7 @@ function getRepositories() {
   
   req.addEventListener("load", displayRepositories())
   
-  req.open("GET", baseURL + '/users/' + user + '/repos')
+  req.open("GET", baseURL + '/users/' + username + '/repos')
   
   req.send()
 }
