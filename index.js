@@ -38,3 +38,7 @@ function displayCommits() {
   document.getElementById("details").innerHTML = commitsList
 }
 
+function getBranches() {
+  const repoName = el.dataset.repository
+  const url = baseURL + '/repos/' + el.dataset.username + '/' + repoName + '/branches'
+}
