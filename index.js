@@ -49,5 +49,5 @@ function getBranches() {
 }
 
 function displayBranches() {
-  const branches = 
+  // const branches = 
 }
