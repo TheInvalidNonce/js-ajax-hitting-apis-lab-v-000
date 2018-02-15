@@ -12,7 +12,7 @@ function getRepositories() {
 }
 
 function displayRepositories() {
-  let repos = JSON.parse(this.responseText)
+  const repos = JSON.parse(this.responseText)
   // console.log(repos);
   
   
