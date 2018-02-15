@@ -23,4 +23,5 @@ const repoList = `<ul>${r.map(r =>'<li>' + rname + ' - https://github.com/' + r.
 
 function getCommits(el) {
   const repoName = el.dataset.repository
+  const url = baseURL + '/repos/' +el.dataset.username + '/' + repoName + '/commits'
 }
