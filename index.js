@@ -6,7 +6,7 @@ function getRepositories() {
   
   req.addEventListener("load", showRepositories())
   
-  req.open("GET", `${'https://api.github.com/users/' + user + '/repos'}`)
+  req.open("GET", + user + '/repos'}`)
   
   req.send()
 }
