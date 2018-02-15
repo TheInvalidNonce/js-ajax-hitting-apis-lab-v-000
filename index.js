@@ -20,3 +20,7 @@ const repoList = `<ul>${r.map(r =>'<li>' + rname + ' - https://github.com/' + r.
   
   document.getElementById('repositories').innerHTML = repoList
 }
+
+function getCommits(el) {
+  const repoName = el.dataset.repository
+}
