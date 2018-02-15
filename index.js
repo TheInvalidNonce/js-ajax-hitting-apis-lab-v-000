@@ -23,7 +23,7 @@ function displayRepositories() {
 
 function getCommits(el) {
   const repoName = el.dataset.repository
-  const url = baseURL + '/repos/' +el.dataset.username + '/' + repoName + '/commits'
+  const url = baseURL + '/repos/' + el.dataset.username + '/' + repoName + '/commits'
   const req = new XMLHttpRequest()
   
   req.addEventListener("load", displayCommits)
