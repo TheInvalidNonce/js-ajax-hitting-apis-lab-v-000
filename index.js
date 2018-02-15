@@ -4,7 +4,7 @@ function getRepositories() {
   let user = document.getElementById("username").value;
   const req = new XMLHttpRequest();
   
-  req.addEventListener("load", displayRepositories
+  req.addEventListener("load", displayRepositories)
   
   req.open("GET", baseURL + '/users/' + user + '/repos')
   
