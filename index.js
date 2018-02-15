@@ -47,3 +47,7 @@ function getBranches() {
   req.open("GET", url)
   req.send()
 }
+
+function displayBranches() {
+  const branches = 
+}
