@@ -1,7 +1,7 @@
 const baseURL = "https://api.github.com"
 
 function getRepositories() {
-  const user = document.getElementById("username").value;
+  let user = document.getElementById("username").value;
   const req = new XMLHttpRequest();
   
   req.addEventListener("load", displayRepositories())
